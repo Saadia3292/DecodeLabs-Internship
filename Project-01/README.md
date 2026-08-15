@@ -1,64 +1,53 @@
-DecodeLabs Internship – Python Programming Project 01
-To-Do List Application
+Python Programming Internship Project 01
+DecodeLabs Internship — To-Do List Application
 
-A simple menu-driven To-Do List Application developed in Python as part of the DecodeLabs Python Programming Internship.
+Prepared by: Saadia Shaheen Batch: 31 Jul – 31 Aug 2026
 
-Project Information
-Internship: DecodeLabs Python Programming Internship
-Project: Project 01
-Application: To-Do List
-Language: Python
-Batch: 31 July – 31 August 2026
-Prepared by: Saadia Shaheen
 Description
 
-This project is a console-based To-Do List Application that allows users to:
-
-Add a task
-View all saved tasks
-Exit the application
-
-The project demonstrates fundamental Python programming concepts including variables, lists, loops, conditional statements, user input, list traversal, and exception handling.
+This project is a menu-driven To-Do List Application developed in Python. It allows users to add tasks, view tasks, and exit the program, while demonstrating the use of variables, lists, loops, conditional statements, user input, and exception handling.
 
 Features
-Add new tasks to a task list
-Prevent empty tasks from being added
-Display all available tasks with numbering
-Handle invalid menu choices
-Handle non-numeric menu input using exception handling
-Continue running until the user selects Exit
-Simple and interactive command-line interface
-Python Concepts Used
+Add a task to the to-do list
+View all added tasks (numbered list)
+Handles empty task input (won't add a blank task)
+Handles invalid menu input using exception handling
+Exit the application through the menu
+Concepts Used
 Variables
 Lists
-append() method
-input() function
-print() function
-while loop
-for loop
-if-elif-else statements
-break and continue
-try-except exception handling
-enumerate() for list traversal
-User input validation
-Requirements
-Python 3.x
-Jupyter Notebook or Google Colab (optional)
+append()
+User Input (input())
+while Loop
+for Loop
+if-elif-else
+Exception Handling (try/except)
+List Traversal
+Project Structure
+DecodeLabs_Internship_Python_Project_01.ipynb
 
-No external Python libraries are required.
+The notebook contains:
 
-How to Run
-Make sure Python 3.x is installed.
-Open the file DecodeLabs_Internship_Python_Project_01(9).ipynb in Jupyter Notebook or Google Colab.
-Run the code cell.
-Select an option from the menu:
-1 to add a task
-2 to view tasks
-3 to exit
+A markdown cell with the project title, author, batch, and description
+A markdown/comment cell listing the core concepts used
+The main code cell containing the To-Do List Application logic
+A closing markdown cell with the Project Summary, Concepts Used, and Learning Outcome
+How the Program Works
+The program starts by printing a welcome banner.
+It displays a menu with three options:
+1. Add Task
+2. View Tasks
+3. Exit
+The user enters a choice (1–3):
+Choice 1: Prompts the user for a task. If the task is empty, it shows an error and asks again; otherwise, the task is added to the list.
+Choice 2: Displays all tasks currently in the list, numbered in order. If no tasks exist, it shows "No tasks available."
+Choice 3: Prints a thank-you message and exits the program (break).
+Any other number prints an invalid-choice message.
+If the user enters something that is not a number, a ValueError is caught and an "Invalid input" message is shown, and the menu loops again.
+This loop (while True) continues until the user selects option 3 to exit.
 Sample Output
 =============================================
         WELCOME TO TO-DO LIST
-        APPLICATION
 =============================================
 
 Choose an Option
@@ -66,17 +55,8 @@ Choose an Option
 2. View Tasks
 3. Exit
 Enter your choice (1-3): 1
-Enter your task: Complete Python Assignment
+Enter your task: 2
 Task added successfully.
-
-Choose an Option
-1. Add Task
-2. View Tasks
-3. Exit
-Enter your choice (1-3): 2
-
-========== YOUR TASKS ==========
-1. Complete Python Assignment
 
 Choose an Option
 1. Add Task
@@ -86,17 +66,18 @@ Enter your choice (1-3): 3
 
 Thank you for using the To-Do List Application.
 Project Completed Successfully.
-Project Structure
-DecodeLabs-Internship-Project-01/
-│
-├── DecodeLabs_Internship_Python_Project_01(9).ipynb
-└── README.md
+Project Summary
+
+This project demonstrates the implementation of a menu-driven To-Do List Application using Python.
+
 Learning Outcome
 
-Through this project, I learned how to manage data using Python lists, create an interactive console application, validate user input, and implement program logic using loops, conditional statements, and exception handling.
+Through this project, I learned how to manage data using Python lists, create interactive console applications, validate user input, and implement logical program flow using loops and conditional statements.
 
-Author
+How to Run
+Open DecodeLabs_Internship_Python_Project_01.ipynb in Google Colab or Jupyter Notebook.
+Run the main code cell.
+Follow the on-screen menu prompts to add tasks, view tasks, or exit.
+Author: Saadia Shaheen Internship: DecodeLabs Internship (Batch: 31 Jul – 31 Aug 2026) Project: 01 — To-Do List Application
 
-Saadia Shaheen
-
-Python Programming Intern – DecodeLabs
+Author: Saadia Shaheen Internship: DecodeLabs Internship (Batch: 31 Jul – 31 Aug 2026) Project: 01 — To-Do List Application
